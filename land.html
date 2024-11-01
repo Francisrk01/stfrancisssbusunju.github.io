@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Inquiry Form - Musisi Land Consultants</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="land.ico" type="image/x-icon">
+
+</head>
+<body>
+    <style>* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #004d00;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.inquiry-form {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.inquiry-form h2 {
+    margin-bottom: 20px;
+}
+
+.inquiry-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.inquiry-form input, .inquiry-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inquiry-form button {
+    padding: 10px;
+    background: #004d00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.inquiry-form button:hover {
+    background: #007700;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.avatarImage {
+   vertical-align: middle;
+   width: 120px;
+   height: 120px;
+   border-radius: 20%;
+   border:3px orange;
+   margin: 10px;
+
+</style>
+    
+    <header>
+   <h1 class="m-0 text-primary"><img src="land.JPG" alt ="budge" class="avatarImage">
+Musisi Land Consultants</h1>
+        <p>Your trusted partner in land acquisition.</p>
+    </header>
+
+    <main>
+        <section class="inquiry-form">
+            <h2>Land Purchase Inquiry</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="5dde2b65-d8ba-47ae-97cc-dd02801584d4">
+                <label for="name">Surname Name:</label>
+                <input type="text" id="name" name="name" required style="width: 577px">
+                <label for="name">Other Name:</label>
+                <input type="text" id="name" name="name" required style="width: 587px">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required style="width: 590px">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required style="width: 572px">
+
+                <label for="area">Choose Area:</label>
+                <select id="area" name="area" required>
+                    <option value="">Select an area</option>
+                    <option value="Kibiga town">Kiboga town</option>
+                    <option value="Bukomero">Bukomero</option>
+                    <option value="Lwamata">lwamata</option>
+                    <option value="kikonda">kikonda</option>
+                </select>
+
+                <button type="submit">Submit Inquiry</button>
+                <button type="button" href="index.html">Go Back</button>
+            </form>
+        </section>
+    </main>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63828.9100469216!2d31.73242600498684!3d0.9174112863320922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177cafb64aa4fd85%3A0x85c6e0db104edc1c!2sKiboga%20Town%20Council!5e0!3m2!1sen!2sug!4v1727085642882!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+        <p>&copy; 2023 Musisi Land Consultants. All Rights Reserved.contact us on 0772884807/0755884807</p>
+    </footer>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

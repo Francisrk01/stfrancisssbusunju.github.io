@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type=text], input[type=date], input[type=email], input[type=tel], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        .gender-labels {
+            margin: 10px 0;
+        }
+
+        .gender-labels input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Admission Form</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+            <input type="hidden" name="access_key" value="5ad513c5-aed9-470a-aa10-0808add7f628">
+        <label>Gender:</label>
+        <div class="gender-labels">
+             <label for="female">Male</label>
+             <input type="radio" id="Male" name="gender" value="male" required>
+             <label for="male">Female</label>
+            <input type="radio" id="Female" name="gender" value="Female" required>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+        </div>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="previousSchool">Previous School Attended:</label>
+        <input type="text" id="previousSchool" name="previousSchool" required>
+
+        <label for="lastGrade">Class Completed:</label>
+        <input type="text" id="lastGrade" name="lastGrade" required>
+
+        <label for="schoolYear">Year:</label>
+        <input type="text" id="schoolYear" name="schoolYear" required>
+
+        <label for="guardianName">Parent/Guardian Full Name:</label>
+        <input type="text" id="guardianName" name="guardianName" required>
+
+        <label for="guardianRelationship">Relationship to Student:</label>
+        <input type="text" id="guardianRelationship" name="guardianRelationship" required>
+
+        <label for="guardianPhone">Parent/Guardian Phone Number:</label>
+        <input type="tel" id="guardianPhone" name="guardianPhone" required>
+
+        <label for="guardianEmail">Parent/Guardian Email Address:</label>
+        <input type="email" id="guardianEmail" name="guardianEmail" required>
+
+        <fieldset class="fieldset">
+            <legend>Emergency Contact Information</legend>
+            <label for="emergencyContact">Name of Emergency Contact:</label>
+            <input type="text" id="emergencyContact" name="emergencyContact" required>
+
+            <label for="emergencyRelationship">Relationship to Student:</label>
+            <input type="text" id="emergencyRelationship" name="emergencyRelationship" required>
+
+            <label for="emergencyPhone">Phone Number:</label>
+            <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+        </fieldset>
+
+                <select id="area" name="area" required>
+                    <option value="">Select Class to join</option>
+                    <option value="northern-region">S1</option>
+                    <option value="southern-region">S2</option>
+                    <option value="eastern-region">S3</option>
+                    <option value="western-region">S4</option>
+                    <option value="western-region">S5</option>
+                    <option value="western-region">S6</option>
+                </select>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+
+        <label>Does the student have any special needs or considerations?</label>
+        <input type="radio" id="needsYes" name="specialNeeds" value="yes" required>
+        <label for="needsYes">Yes</label>
+        <input type="radio" id="needsNo" name="specialNeeds" value="no">
+        <label for="needsNo">No</label>
+        <textarea id="specialNeedsDetails" name="specialNeedsDetails" placeholder="If yes, please explain:" rows="3"></textarea>
+
+        <label for="declaration">Declaration:</label>
+        <textarea id="declaration" name="declaration" rows="3" required placeholder="I hereby declare that the information provided is true and accurate."></textarea>
+            <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .terms {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+        .accept {
+            margin-top: 20px;
+        }
+    </style>
+<body>
+
+<h1>School rules and Regulations</h1>
+
+<div class="terms" style="height: 371px; width: 761px">
+    <!-- Paste your terms and conditions here -->
+    <p><strong>Last updated:</strong> 09/23/2024</p>
+    <p>Welcome to St Francis SSS Busunju below are our rules and regulations</p>
+    <p>CODE	RULES AND REGULATIONS	STIPULATED PUNISHMENT
+A	GENERAL RULES.</p>
+	<p>&nbsp;<BR>1.	Insolence of any nature to the school administration, members of teaching and non- teaching staff and students’ leaders is strictly forbidden 	Expulsion
+<BR>2.	Physical violence, teasing, bullying and unruly behavior are strictly prohibited	Expulsion
+<BR>
+
+3.	 Stealing, robbery and forgery or cheating of any kind is strongly prohibited.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          	Expulsion 
+<BR>
+4.	Rioting of any nature (attempting to incite a riot) is typical of an uncivilized community.	Expulsion
+<BR>
+
+5.	Alcohol, drugs and smoking are strictly forbidden	Expulsion
+	<BR>
+6.	Promiscuous behaviors such as boy- girl/ boy- boy/ girl- girl relationships associated with immorality are strongly condemned.	Expulsion 
+<BR>
+7.	Escapism is a very grave offence	Suspension of not more than one week and reporting back with a reel of chain- link- 12 or expulsion
+<BR>
+8.	Use of obscene and abusive language is strictly forbidden	Punishable suspension for a month
+<BR>
+9.	Military uniform or equipment i.e. bullets, pistols, guns, Shoes, e.t.c must not be brought to school	Expulsion
+<BR>
+10.	Staff- quarters are strictly out of bounds to learners except in case of emergencies	Suspension for a month
+<BR>
+11.	Possession of electric gadgets such as coils, water- heaters, shavers or communication equipment like phones, radios, ipads, e.t.c or photographic equipment such as cameras is prohibited	Confiscation and destruction of the equipment and suspension for a week.
+<BR>
+12.	Sharing of properties like beds, clothes, face- masks, shoes, sandals, meal- cards, fees clearance cards, e.t.c is not allowed	Confiscation of the shared item and manual work of not more than one week to both the lender and the borrower.
+
+<BR>
+13.	Painting of finger and toe- nails and decolourization of one’s skin are not allowed	Manual work of not more than a week after immediate removal of the paint from the nails.<BR>
+
+<BR>
+14.	Possession of pornographic materials i.e. Magazines, Newspapers, e.t.c is highly condemned.	Expulsion<BR>
+	15.	Throwing stones, sticks is highly punishable 	Can lead to expulsion
+<BR>
+16.	Fruits, flowers, fences and plants on the school compound are school property. No student should attempt to pick or break them.	Can lead to expulsion
+<BR>
+17.	Negligence of personal property is highly punishable.	Can lead to suspension
+
+	Riding bicycles, motor cycles, cars, e.t.c on the school compound is highly condemned. Learners should alight from them and roll them gently to the parking yard and the gate.	Confiscation of the misused locomotive for a month.B	UNIFORM AND UNIFORMITY	
+<BR>
+18.	Shortening, lengthening of the skirt or tampering with the school uniform in any way, and lowering of trousers below the waist level is forbidden.	Confiscation of the modified uniform and buying a new one
+<BR>
+19.	Ear rings, necklaces, nail vanish, rings, lip stick, bangles, bracelets, capes, hats are not allowed	Complete confiscation, Suspension for a month or expulsion 
+<BR>
+20.	Students’ hair should kept at ¼ (a quarter an inch), French cut, back- bush and shaolin are forbidden	Highly punishable by suspension for a month
+<BR>
+21.	Learners must not wear unauthorized jackets, cardigans, sweaters, head soak, coats, scuffs, casual- wears, uniforms for other schools, e.t.c	Confiscation for good
+<BR>
+22.	Irregularity in school attendance, failure to produce classroom notes, assignments, holiday- work, e.t.c are prohibited.	Reprimand, manual work of not more than one week or suspension.
+<BR>
+
+
+23.	The English language is the medium of communication. Vernacular speaking is indistinguishable from sectarianism in this multilingual society.	Suspension for a month
+<BR>
+24.	All learners must purchase their requirements only from the school canteen during break time, lunch time and after classes.	Manual work of not more than one week, reprimand or suspension.
+<BR>
+25.	All learners must be dressed in full school uniform, walk and talk in an organized and orderly manner at, to and fro school	Manual work of not more than one week, reprimand or suspension.
+<BR>
+26.	All learners going out for games and sports, seminars, trips, tours, e.t.c must be in full school uniform and must carry their identity cards with them for security purposes. Shouting and nasty singing are not allowed in the school bus/ truck	Expulsion
+<BR>
+27.	Vandalism and malicious damaging of school property i.e. writing on desks, walls of classrooms and toilets, breaking desks, sockets, waste- bins, window panels, fire extinguishers, e.t.c is highly forbidden.	Suspension of not more than two weeks and reporting back to school after replacing six- fold.
+<BR>
+28.	Leaving the school campus without written permission is highly condemned.	Self- dismissal from school.
+
+C	EXAMINATION/ ACADEMICS	<BR>
+
+29.	All learners must observe double margins and should use indented system of paragraphing.	Reprimand and manual work for a week
+<BR>
+30.	Cheating of any nature in examination is not allowed	Instant demotion irrespective of class or term
+<BR>
+31.	After an examination period, learners must continue with the normal school routine i.e. class- break- lunch- games and preps.	Suspension for a month
+<BR>
+32.	Learners must observe sitting plan instructions and directions governing exams	Suspension for a month
+<BR>
+33.	Learners with chronic illnesses must report to the deputy administration with medical documents from qualified medical personnel. 	Expulsion 
+<BR>
+34.	Preps are mandatory to every boarding learner. They must have their preps in appropriate rooms allocated to them at the right time.	Reprimand and manual work for a week
+<BR>
+35.	Learners must observe library and laboratory hours and rules. Learners must take proper care of all library and laboratory materials in their care. 	Materials lost or damaged must be replaced six- fold.
+<BR>
+36.	Missing class is punishable. In case of sickness, permission should be obtained from the administration	Suspension or expulsion
+<BR>
+37.	Missing or missing exams is not allowed	Self- dismissal
+<BR>
+38.	Shouting or any other form of noise which disrupts the freedom of others is highly prohibited	Manual work of not more than one week, reprimand or suspension.
+<BR>
+39.	Unnecessary movement during class, Preps and other school activities is prohibited.	Manual work of not more than one week, reprimand or suspension.
+
+		<BR>
+
+D	DOMESTIC RULES	
+
+40.	All learners must report to school on the first day of the term before 5:00 pm.	Receiving those who have not complied on the weekend.
+<BR>
+41.	The staff- room is out of bounds to learners.	Suspension for a month.
+<BR>
+42.	All societies/ Clubs shall have a patron who is a member of teaching staff.	
+<BR>
+43.	Society leaders must not communicate with outside bodies/ personalities through their patrons/ club leaders. All correspondences from societies or persons must be addressed through the head teacher of the school to the head teacher of the specific school concerned and must be counter- signed by the patron of the society.	
+<BR>
+44.	All societies/ clubs shall not mobilize money from club members without the consent of the patron.	
+<BR>
+45.	No society shall make a trip without the patron. However, the patron may request (a) member(s) of the academic staff to accompany the club on his/ her behalf.	
+<BR>
+46.	House- work and general cleaning are a must to all students without exception	Manual work of not more than one week, reprimand or suspension.
+<BR>
+47.	Learners must leave the dormitory and the dormitory vicinity- compound, verandah by 7:00 am. Any learner found there beyond this time commits an offence.	Manual work of not more than one week, reprimand or suspension.
+<BR>
+48.	Dormitories shall be out of bounds to learners during class and prep time	Two weeks’ suspension
+<BR>
+49.	Attendance of mass, recollection and other spiritual animation activities is a must to all students.	Suspension or manual work of not more than one week or reprimand.
+<BR>
+50.	Learners are not allowed in the kitchen before the time for serving meals. Learners should not serve themselves meals.	Suspension for a month and coming back with a fifty kilogram sack of maize flour.
+<BR>
+51.	Mudslinging, rumor mongering and back biting are highly punishable	Manual labor or suspension for a month.
+<BR>
+52.	All learners must ensure proper hygiene and care for the safety of all. Any learner who does anything that endangers the safety of self or others by being unhygienic commits an offence.	Reprimand and manual labor for a week
+<BR>
+53.	Learners must have personal jerry cans and basins/ buckets.	Reprimand 
+<BR>
+54.	Learners must attend all religious ceremonies at the school regardless of religious differences i.e. Mass, Adoration, Evening Prayers, Recollection, Way of the Cross, e.t.c	Suspension for a month or expulsion.
+<BR>
+55.	Shouting and any form of noise- making which may disturb the freedom of others is forbidden, more especially the eve of the closing day of the term “kirommo”	Suspension for a month or expulsion.
+<BR>
+56.	All forms of private cooking are not allowed at school. Cooking facilities i.e. stoves, coils, saucepans, percolators. E,t,c are not allowed at school.	Suspension for a month.
+<BR>
+57.	Classes, compound, toilets and dormitories are cleaned by learners. Any learner, who absconds from cleaning on the day he / she is programmed for it on the Rota, commits an offence.	Manual labor for a month.
+<BR>
+58.	The girls’ dormitory is out of bounds to boys and vice- versa.	Students found without the knowledge of the administration will be expelled.
+<BR>
+59.	Attendance of assemblies and class- meetings is a must to all students.	Reprimand, manual work of not more than one week or suspension.
+<BR>
+60.	It is a criminal offence for a student to operate electricity.	Suspension of not more than two weeks or expulsion.
+<BR>
+61.	Punctuality for all school functions is a must to all students.	Reprimand or manual work of not more than one week.
+<BR>
+62.	On reporting for a new term, all students must register with the relevant authorities and come in school uniform.	Reprimand, suspension of not more than one week or expulsion.
+<BR>
+63.	It is a must for all students to put on a proper school uniform all the time.	Reprimand, suspension of not more than one week.
+<BR>
+64. 	On the days when a dance is offered, all learners must dance in a formal way as expected of them as learners. Any form of immoral dancing such as those where learners of either opposite or same sex stick to each other that tarnish the name of the school is strongly condemned.	Suspension for two weeks.
+<BR>
+E	PREFECTS’ LEADERSHIP CODES	
+<BR>
+64.	It is highly condemned for a prefect to insult, embarrass or demoralize a fellow prefect 	Instant demotion and dismissal from school
+<BR>
+65.	Prefect leaders are at all times supposed to be exemplary to the rest of the members in everything.	Reprimand.
+<BR>
+66.	All prefects must be loyal to the school philosophy, mission, and motto and academically sounding.	Reprimand or demotion or both.
+<BR>
+67.	There should be no leakage of information from prefects’ meeting/ discussion to the students’ community.	Instant demotion.
+<BR>
+68.	Teamwork is a must; remember there is no “I” but “WE” in TEAMWORK! and in a sinking- boat, there is no winner	Reprimand 
+<BR>
+F	VISITATION/ VISITATION DAYS	
+<BR>
+
+69.	Parents are encouraged to visit their children on all Visitation Days and provide them with necessary basic requirements.	
+<BR>
+70.	Cooked food is not allowed for the safety of our learners.	Expulsion 
+<BR>
+71.	Visiting hours are strictly between 9:00 am and 5:00 pm.	
+<BR>
+72.	All parents must strictly observe office working hours and days i.e. 8:00 am- 5:00 pm from Monday to Friday.	
+<BR>
+73.	Parents/ Guardians and relatives are not allowed to see learners during school time.	Suspension of learner with the parent for a month.
+<BR>
+74.	Visitors must seek permission from school administrators before talking to any learner.	Learner will be sent home with the visitors.
+<BR>
+75.	Visitors are not allowed in dormitories.	Learner will be suspended with the visitor.
+<BR>
+76.	Parents should only come to school when they are decently dressed.	Indecently dressed parents will not be allowed in school ( refer to the chart for acceptable dress- code).
+<BR>
+77.	Learners shall only use the parents’ or guardians’ mobile phones when they are near them. Parents will not allow learners to wander far away around school from them with their phones.	Confiscation for good.
+<BR>
+</p>
+
+</div>
+
+
+
+<div class="accept">
+    <label>
+        <input type="checkbox" id="acceptTerms"> I have read and accept the Terms and Conditions
+    </label>
+</div>
+
+<script>
+    const checkbox = document.getElementById('acceptTerms');
+    const submitButton = document.getElementById('submitButton');
+
+    checkbox.addEventListener('change', function() {
+        submitButton.disabled = !this.checked;
+    });
+</script>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>

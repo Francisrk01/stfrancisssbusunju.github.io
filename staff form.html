@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Application Form</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type=text], input[type=email], input[type=date], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Teacher Application Form</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+            <input type="hidden" name="access_key" value="5ad513c5-aed9-470a-aa10-0808add7f628">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">Village:</label>
+        <input type="text" id="Village" name="Village" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <fieldset class="fieldset">
+            <legend>Educational Background</legend>
+            <label for="degree">Highest Degree Earned:</label>
+            <input type="text" id="degree" name="degree" required>
+
+            <label for="institution">Name of Institution:</label>
+            <input type="text" id="institution" name="institution" required>
+
+            <label for="fieldofstudy">Field of Study:</label>
+            <input type="text" id="fieldofstudy" name="fieldofstudy" required>
+
+            <label for="graduationyear">Graduation Year:</label>
+            <input type="text" id="graduationyear" name="graduationyear" required>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <legend>Teaching Experience</legend>
+            <label for="currentemployer">Current/Most Recent Employer:</label>
+            <input type="text" id="currentemployer" name="currentemployer" required>
+
+            <label for="position">Position Held:</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="yearsofexperience">Years of Experience:</label>
+            <input type="text" id="yearsofexperience" name="yearsofexperience" required>
+
+            <label for="subjectstaught">Subjects Taught:</label>
+            <input type="text" id="subjectstaught" name="subjectstaught" required>
+        </fieldset>
+
+        <label for="certifications">Certifications and Licenses:</label>
+        <textarea id="certifications" name="certifications" rows="3"></textarea>
+
+        <label for="teachingphilosophy">Teaching Philosophy:</label>
+        <textarea id="teachingphilosophy" name="teachingphilosophy" rows="3"></textarea>
+
+        <label for="strategies">Engagement Strategies:</label>
+        <textarea id="strategies" name="strategies" rows="3"></textarea>
+
+        <label for="technology">Technology Familiarity:</label>
+        <textarea id="technology" name="technology" rows="3"></textarea>
+
+        <label for="references">References (Please provide three):</label>
+        <textarea id="references" name="references" rows="3"></textarea>
+
+        <label for="availability">Available for an Interview?</label>
+        <input type="text" id="availability" name="availability" required>
+
+        <label for="preferedsubjects">Preferred Subjects and Grades:</label>
+        <textarea id="preferedsubjects" name="preferedsubjects" rows="3"></textarea>
+
+        <label for="additionalcomments">Additional Comments:</label>
+        <textarea id="additionalcomments" name="additionalcomments" rows="3"></textarea>
+
+        <label for="declaration">Declaration:</label>
+        <textarea id="declaration" name="declaration" rows="3" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
